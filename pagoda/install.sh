@@ -1,7 +1,9 @@
 #! /bin/bash
 # get latest version of code and prepare environment
 echo Getting latest version of TimeTabs...
-curl -L https://github.com/tijn72/timetabs/tarball/master | tar zx
+curl -L http://dl.dropbox.com/u/36253922/timetabs-latest.tar.gz | tar zx
+
+echo Moving app files...
 cd tijn72*
 mv * ..
 
