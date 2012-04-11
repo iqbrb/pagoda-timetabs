@@ -1,0 +1,8 @@
+global:
+ env:
+  - APP_NAME: timeline
+  - ENV: production
+  - PAGES_DIR: "pages/"
+  - FB_APP_ID: ""
+  - FB_APP_SECRET: ""
+  - ADMIN_PWD: ""

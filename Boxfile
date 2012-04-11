@@ -1,0 +1,26 @@
+web1:
+ name: TimeTabs
+ shared_writable_dirs:
+  - cache
+  - pages
+ php_version: 5.3.10
+ php_extensions:
+  - mysqli
+  - mysql
+  - gd
+  - eaccelerator
+  - apc
+  - dom
+  - geoip
+  - http
+  - json
+  - mcrypt
+  - pdo_mysql
+  - phar
+  - xml
+ after_build:
+  - "wget http://tabedit.org/timetabs/timetabs-latest.gz"
+  - "tar -xzf timetabs-latest.gz"
+  - "rm timetabs-latest.gz"
+  - "mv pagoda/config.php config.php"
+  
