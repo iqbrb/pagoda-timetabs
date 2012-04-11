@@ -2,6 +2,9 @@ global:
  env:
   - APP_NAME: timetabs
   - ENV: "development"
-  - FB_APP_ID: "APP_ID"
-  - FB_APP_SECRET: "APP_SECRET"
-  - ADMIN_PWD: "PWD"
+  - FB_APP_ID: "*"
+  - FB_APP_SECRET: "*"
+  - ADMIN_PWD: "*"
+web1:
+ before_deploy:
+  - "cp pagodo/pagetemplate pages/default"
