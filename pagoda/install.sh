@@ -8,12 +8,10 @@ cd tijn72*
 mv * ..
 cd ..
 
-echo Moving config and default files...
+echo Moving config file...
 mv pagoda/config.php config.php
-mv pagoda/default pages
 
 echo Cleaning up files...
 rm -r tijn72*
-rm -r pagoda
 
 echo Done! 
