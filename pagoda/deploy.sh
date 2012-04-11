@@ -9,7 +9,7 @@ mv * ..
 cd ..
 
 echo Moving config file...
-mv pagoda/config.php config.php
+mv pagoda/config.php .
 
 echo Cleaning up files...
 rm -r tijn72*
