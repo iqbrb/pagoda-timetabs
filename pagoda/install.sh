@@ -12,6 +12,7 @@ echo Moving config file...
 mv pagoda/config.php config.php
 
 echo Creating default page
+mkdir pages/default
 mv default/* pages/default
 
 echo Cleaning up files...
