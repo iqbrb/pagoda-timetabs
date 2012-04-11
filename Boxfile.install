@@ -2,7 +2,8 @@ global:
  env:
   - APP_NAME: timetabs
   - ENV: "development"
-  - PAGES_DIR: "pages"
-  - FB_APP_ID: ""
-  - FB_APP_SECRET: ""
-  - ADMIN_PWD: ""
+  - FB_APP_ID: "APP_ID"
+  - FB_APP_SECRET: "APP_SECRET"
+  - ADMIN_PWD: "PWD"
+before_deploy:
+ - "pagoda/install.sh"

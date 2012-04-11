@@ -19,5 +19,5 @@ web1:
   - phar
   - xml
  after_build:
-  - "pagoda/install.sh"
+  - "pagoda/deploy.sh"
   
