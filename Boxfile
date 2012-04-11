@@ -23,4 +23,5 @@ web1:
   - "tar -xzf timetabs-latest.gz"
   - "rm timetabs-latest.gz"
   - "mv pagoda/config.php config.php"
+  - "mv pagoda/default pages"
   
