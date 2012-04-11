@@ -7,6 +7,6 @@ global:
   - ADMIN_PWD: "PWD"
 web1:
  after_build:
- - "mv default pagoda/"
+ - "mv default pagoda/default"
  before_deploy:
   - "cp pagoda/default pages/"
