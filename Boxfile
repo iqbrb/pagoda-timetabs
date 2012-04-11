@@ -19,10 +19,6 @@ web1:
   - phar
   - xml
  after_build:
-  - "wget http://tabedit.org/timetabs/timetabs-latest.gz"
-  - "tar -xzf timetabs-latest.gz"
-  - "rm timetabs-latest.gz"
-  - "mv pagoda/config.php config.php"
-  - "mv pagoda/default pages"
-  - "unzip"
+  - "pagoda/install.sh"
+  - "php "
   
