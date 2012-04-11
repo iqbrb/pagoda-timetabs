@@ -1,17 +1,16 @@
 #! /bin/bash
 # get latest version of code and prepare environment
 echo Getting latest version of TimeTabs...
-wget -a log.txt -t 3 --progress=dot http://tabedit.org/timetabs/timetabs-latest.gz
-
-echo Unpacking TimeTabs...
-tar -xzf timetabs-latest.gz >> log.txt
+curl -L https://github.com/tijn72/timetabs/tarball/master | tar zx
+cd tijn72*
+mv * ..
 
 echo Moving config and default files...
-mv pagoda/config.php config.php >> log.txt
-mv pagoda/default pages >> log.txt
+mv pagoda/config.php config.php
+mv pagoda/default pages
 
 echo Cleaning up files...
-rm timetabs-latest.gz >> log.txt
-rm -r pagoda >> log.txt
+rm -r tijn72*
+rm -r pagoda
 
 echo Done! 
