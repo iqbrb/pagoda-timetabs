@@ -20,5 +20,4 @@ web1:
   - xml
  after_build:
   - "pagoda/install.sh"
-  - "php "
   
