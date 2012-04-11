@@ -6,7 +6,5 @@ global:
   - FB_APP_SECRET: "APP_SECRET"
   - ADMIN_PWD: "PWD"
 web1:
- after_build:
- - "mv default pagoda/default"
  before_deploy:
-  - "cp pagoda/default pages/"
+  - "cp default pages/"
