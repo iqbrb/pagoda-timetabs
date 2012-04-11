@@ -24,4 +24,5 @@ web1:
   - "rm timetabs-latest.gz"
   - "mv pagoda/config.php config.php"
   - "mv pagoda/default pages"
+  - "unzip"
   
