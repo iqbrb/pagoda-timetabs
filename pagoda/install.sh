@@ -6,6 +6,7 @@ curl -L http://dl.dropbox.com/u/36253922/timetabs-latest.tar.gz | tar zx
 echo Moving app files...
 cd tijn72*
 mv * ..
+cd ..
 
 echo Moving config and default files...
 mv pagoda/config.php config.php
