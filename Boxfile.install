@@ -5,5 +5,5 @@ global:
   - FB_APP_ID: "APP_ID"
   - FB_APP_SECRET: "APP_SECRET"
   - ADMIN_PWD: "PWD"
-before_deploy:
- - "pagoda/install.sh"
+ before_deploy:
+  - "pagoda/install.sh"
